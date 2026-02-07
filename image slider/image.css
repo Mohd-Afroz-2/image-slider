@@ -1,0 +1,60 @@
+/* Center the slider on the page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 50px;
+}
+
+.slider-container {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+/* Hide all slides by default */
+.slide {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none; 
+}
+
+/* Show the first slide initially */
+.slide:first-child {
+    display: block;
+}
+
+/* Style the buttons */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#toggleBtn {
+    background-color: #007bff;
+}
+
+#toggleBtn:hover {
+    background-color: #0056b3;
+}
